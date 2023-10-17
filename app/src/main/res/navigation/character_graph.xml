@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/character_graph"
+    app:startDestination="@id/startFragment">
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.robertomr99.rickandmortycharacters.ui.view.StartFragment"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start" >
+        <action
+            android:id="@+id/action_startFragment_to_characterFragment"
+            app:destination="@id/characterFragment"
+            app:enterAnim="@anim/from_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/characterFragment"
+        android:name="com.robertomr99.rickandmortycharacters.ui.view.CharacterFragment"
+        android:label="fragment_character"
+        tools:layout="@layout/fragment_character">
+
+        <action
+            android:id="@+id/action_characterFragment_to_characterDetailFragment"
+            app:destination="@id/characterDetailFragment"
+            app:enterAnim="@anim/from_right" />
+        <action
+            android:id="@+id/action_characterFragment_to_startFragment"
+            app:destination="@id/startFragment"
+            app:exitAnim="@anim/to_left"
+            app:enterAnim="@anim/from_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/characterDetailFragment"
+        android:name="com.robertomr99.rickandmortycharacters.ui.view.CharacterDetailFragment"
+        android:label="fragment_character_detail"
+        tools:layout="@layout/fragment_character_detail" >
+        <argument
+            android:name="idCharacter"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <action
+            android:id="@+id/action_characterDetailFragment_to_characterFragment"
+            app:destination="@id/characterFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right" />
+    </fragment>
+
+</navigation>

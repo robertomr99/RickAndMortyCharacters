@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Rick And Morty Characters</string>
+    <string name="start_message">Tap the eye to see the characters</string>
+    <string name="author">By Roberto Muñoz</string>
+    <string name="hint_searchview">Morty Smith</string>
+    <string name="Episodes">Episodes</string>
+
+    <string name="character_not_found">Character not found</string>
+</resources>

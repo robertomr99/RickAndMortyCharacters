@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="green_rm">#79b644</color>
+    <color name="venom_green_rm">#3db449</color>
+    <color name="purple_rm">#ad74b1</color>
+    <color name="dark_purple_rm">#712558</color>
+    <color name="light_blue_rm">#06afc8</color>
+
+
+    <color name="light_gray">#f4f4f5</color>
+    <color name="medium_gray">#3d3f44</color>
+    <color name="dark_gray">#272a32</color>
+
+    <color name="red_dead">#d63d2e</color>
+    <color name="green_alive">#55cd45</color>
+    <color name="gray_unknown">#9e9f9f</color>
+
+
+
+</resources>
