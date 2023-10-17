@@ -1,6 +1,6 @@
 # Rick And Morty Characters
 
-"Simple App that retrieves data from the Rick and Morty API, showcasing an implementation of some of the best practices in Android development. This includes:
+"Simple App that retrieves data from the [Rick and Morty API](https://rickandmortyapi.com/), showcasing an implementation of some of the best practices in Android development. This includes:
 
 * MVVM for promotes a clear separation of concerns between an application's user interface (UI), data management, and functional logic.
 * ViewModel for efficient management and preservation of user interface-related data.
